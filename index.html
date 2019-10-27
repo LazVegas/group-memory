@@ -9,16 +9,33 @@
   </head>
   <body>
     <div id="card-array">
+      <div class="scorepanel">
+          <ul>
+            <li class="timer">Time: 00:00</li>
+            <li class="turns">Turns:</li>
+            <li>
+              <button id="reset" onClick="resetGame()">Reset</button>
+            </li>
+          </ul>
+      </div>
       <div id="buttons"></div>
       <!-- Location of Rendering Cards -->
-    </div>
-    <div id="shuffle"></div>
+      </div>
+      
 
+      <div id="fireworks">
+        <div class="winnerScreen">
+          <p class="outcome"></p>
+        </div>
+      </div>
+      
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="jquery.fireworks.js"></script>
     <script src="variables.js"></script>
     <script src="main.js"></script>
   </body>

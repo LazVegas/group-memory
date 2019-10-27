@@ -12,17 +12,16 @@ html {
 
 #card-array {
   display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  border: 1px solid black;
+  flex-direction: column;
+  width: 80%;
   margin: auto;
-  height: auto;
+  position: relative;
 }
 
 #buttons button {
   width: 150px;
   height: 150px;
-  margin: auto;
+  margin: 2px;
   font-size: 2rem;
   /* background: black; */
 }
@@ -33,4 +32,42 @@ html {
 
 .face-up {
   background: white;
+}
+
+#reset {
+  width: 50px;
+  height: 30px;
+}
+
+div.scorepanel ul {
+  width: 300px;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+/* div.scorepanel ul>li{ */
+/* } */
+.winnerScreen {
+  width: 85%;
+  height: 700px;
+  margin: auto;
+  background-color: white;
+  display: none;
+  border: 1px solid green;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+.scorepanel {
+  display: flex;
+  justify-content: space-evenly;
+  /* list-style: none; */
+}
+.outcome {
+  color: black;
+}
+
+#fireworks {
+  width: 90%;
+  height: 800px;
 }
