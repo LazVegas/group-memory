@@ -1,7 +1,6 @@
 let deck = `abcdefghiabcdefghi`
-let deck2 = [`a<img src="./images/banana.jpg" />`]
-var boo = new Audio("./boo.mp3")
-var win = new Audio("./Applause.mp3")
+var boo = new Audio("./assets/boo.mp3")
+var win = new Audio("./assets/Applause.mp3")
 var flips = [boo, win]
 var resetButton
 let counter //to stop the interval

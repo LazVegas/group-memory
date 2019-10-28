@@ -1,8 +1,10 @@
 html {
   box-sizing: border-box;
-  width: 100%;
+  height: 100%;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 *,
 *::after,
@@ -10,20 +12,82 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-image: url("./assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.background {
+  margin-top: 200px;
+  width: 100%;
+}
+
 #card-array {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  align-items: center;
+  width: 60%;
   margin: auto;
-  position: relative;
 }
 
+/* ---------- Start: Score panel ---------- */
+
+  /* ----- Score Panel ----- */
+.scorepanel {
+  width: 100%;
+  display: flex;
+}
+.scorepanel ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+  /* ----- Timer ----- */
+  .timer {
+    color: white;
+    font-size: 20px;
+    font-family: 'Black Ops One', cursive;
+  }
+  /* ----- Turns ----- */
+  #turns, .turns {
+    color: white;
+    font-size: 20px;
+    font-family: 'Black Ops One', cursive;
+  }
+  /* ----- Completed ----- */
+  #completed {
+    color: white;
+    font-size: 20px;
+    font-family: 'Black Ops One', cursive;
+  }
+  /* ----- Reset ----- */
+  #reset {
+    width: 50px;
+    height: 30px;
+  }
+
+/* ---------- End: Score panel ---------- */
+
+/* ---------- Start: Styling the cards ---------- */
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 #buttons button {
-  width: 150px;
-  height: 150px;
-  margin: 2px;
+  width: 120px;
+  height: 120px;
+  margin: 4px;
   font-size: 2rem;
-  /* background: black; */
+  border-radius: 20px;
 }
 
 .face-down {
@@ -34,40 +98,23 @@ html {
   background: white;
 }
 
-#reset {
-  width: 50px;
-  height: 30px;
-}
+/* ---------- End: Styling the cards ---------- */
 
-div.scorepanel ul {
-  width: 300px;
-  justify-content: space-between;
-  display: flex;
-  list-style: none;
-}
-/* div.scorepanel ul>li{ */
-/* } */
-.winnerScreen {
-  width: 85%;
-  height: 700px;
-  margin: auto;
-  background-color: white;
-  display: none;
-  border: 1px solid green;
-  position: absolute;
-  top: 0;
-  left: 100px;
-}
-.scorepanel {
-  display: flex;
-  justify-content: space-evenly;
-  /* list-style: none; */
-}
+/* ---------- Start: The Outcome ---------- */
+
 .outcome {
-  color: black;
+  width: 100%;
+  margin-top: 100px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
 }
 
-#fireworks {
-  width: 90%;
-  height: 800px;
+/* ---------- End: The Outcome ---------- */
+
+
+div.deck {
+  width: 100px;
+  height: 80px;
+  display: flex;
 }
